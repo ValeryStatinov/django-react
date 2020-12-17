@@ -5,6 +5,7 @@ COPY . /django-example
 RUN apt-get update
 RUN apt-get install nodejs -y
 RUN apt-get install npm -y
+RUN npm i npm@latest -g
 
 WORKDIR /django-example
 RUN pip3 install -r requirements.txt
